@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43396062-1031-4f70-9ca9-7c70a9ce7115" name="변경" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="43396062-1031-4f70-9ca9-7c70a9ce7115" name="변경" comment="이름 변경 및 yml 파일 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/capstone/CapstoneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/capstone/CapstoneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +36,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -117,7 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1728623285671</updated>
       <workItem from="1728623286856" duration="634000" />
-      <workItem from="1728623992827" duration="1237000" />
+      <workItem from="1728623992827" duration="2562000" />
+      <workItem from="1728628210561" duration="357000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -127,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728623703602</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="이름 변경 및 yml 파일 수정">
+      <option name="closed" value="true" />
+      <created>1728625554642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728625554642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +147,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="이름 변경 및 yml 파일 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="이름 변경 및 yml 파일 수정" />
   </component>
 </project>
