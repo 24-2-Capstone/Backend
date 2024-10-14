@@ -2,29 +2,28 @@ package com.example.capstone.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-// @Table(name = "Chat")
-public class Chat {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY) //양방향
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    private String category_name;
 
-    @OneToOne(mappedBy = "chat")
-    private Robot robot;
-    
-    @Builder
-    public Chat(Long id, User user) {
+    @OneToMany(mappedBy = "Category", cascade = CascadeType.REMOVE)
+    private List<Goods> goodsList = new ArrayList<>();
+
+    public Category(Long id, String category_name) {
         this.id = id;
+        this.category_name = category_name;
     }
 }
