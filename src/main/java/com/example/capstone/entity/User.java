@@ -19,17 +19,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String ChatLog;
-
     boolean isAdmin;
 
-    @OneToMany(mappedBy = "User", cascade = CascadeType.REMOVE)
-    private List<Chat> chatList;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
+    private List<Chat> chatList = new ArrayList<>();
 
     @Builder
-    private User(Long id, String chatLog, boolean isAdmin) {
+    private User(Long id, boolean isAdmin) {
         this.id = id;
-        this.ChatLog = chatLog;
         this.isAdmin = isAdmin;
     }
 }
