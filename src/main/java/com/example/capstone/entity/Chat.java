@@ -5,6 +5,9 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Entity
@@ -16,15 +19,19 @@ public class Chat {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime createdAt;
+
     @ManyToOne(fetch = FetchType.LAZY) //양방향
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @OneToOne(mappedBy = "chat")
     private Robot robot;
-    
+
     @Builder
-    public Chat(Long id, User user) {
+    public Chat(Long id) {
         this.id = id;
     }
 }

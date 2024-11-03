@@ -19,7 +19,7 @@ public class Category {
 
     private String category_name;
 
-    @OneToMany(mappedBy = "Category", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "category", cascade = CascadeType.REMOVE)
     private List<Goods> goodsList = new ArrayList<>();
 
     public Category(Long id, String category_name) {
