@@ -28,4 +28,12 @@ public class GoodsService {
             throw new BaseException(BaseResponseStatus.NON_EXIST_GOODS);
         }
     }
+
+    public void deleteGoods(Long id) throws BaseException {
+        if (goodsRepository.existsById(id)) {
+            goodsRepository.deleteById(id);
+        } else {
+            throw new BaseException(BaseResponseStatus.NON_EXIST_GOODS);
+        }
+    }
 }
