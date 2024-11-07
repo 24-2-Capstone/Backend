@@ -3,7 +3,6 @@ package com.example.capstone.controller;
 import com.example.capstone.common.exception.BaseException;
 import com.example.capstone.common.response.BaseResponse;
 import com.example.capstone.dto.response.GoodsResponse;
-import com.example.capstone.entity.Goods;
 import com.example.capstone.entity.Location;
 import com.example.capstone.service.GoodsService;
 import lombok.RequiredArgsConstructor;

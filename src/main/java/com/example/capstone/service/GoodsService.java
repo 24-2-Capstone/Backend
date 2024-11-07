@@ -7,7 +7,6 @@ import com.example.capstone.entity.Goods;
 import com.example.capstone.entity.Location;
 import com.example.capstone.repository.GoodsRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +19,7 @@ public class GoodsService {
 
     private GoodsRepository goodsRepository;
 
-    public Location getGoodsLocation(Long id) throws Exception {
+    public Location getGoodsLocation(Long id) throws BaseException {
         Optional<Goods> goods = goodsRepository.findById(id);
 
         if (goods.isPresent()) {
