@@ -1,18 +1,19 @@
 package com.example.capstone.entity;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Getter
+@Setter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Robot {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // 로봇의 id는 요청이 들어올때마다 하나씩 증가, 즉 요청 하나당 id 값을 가지게 됨.
+
+    private String status;
 
     @OneToOne
     @JoinColumn(name = "chat_id")
@@ -21,4 +22,10 @@ public class Robot {
     @OneToOne
     @JoinColumn(name = "location_id")
     private Location location;
+
+    @Builder
+    public Robot(String status, Chat chat, Location location) {
+        this.status = status;
+        this.location = location;
+    }
 }

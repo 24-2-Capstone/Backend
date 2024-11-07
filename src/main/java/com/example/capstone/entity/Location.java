@@ -20,6 +20,10 @@ public class Location {
 
     private String location_detail;
 
+    private double x;
+
+    private double y;
+
     @OneToOne(mappedBy = "location")
     private Robot robot;
 

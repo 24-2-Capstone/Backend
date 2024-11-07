@@ -1,5 +1,6 @@
 package com.example.capstone.entity;
 
+import com.example.capstone.dto.request.GoodsListDto;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -41,5 +42,15 @@ public class Goods {
         this.stock_state = stock_state;
         this.goods_note = goods_note;
         this.goods_price = goods_price;
+    }
+
+    public static Goods dtoToEntity(GoodsListDto dto) {
+        return Goods.builder()
+                .goods_name(dto.getGoods_name())
+                .goods_description(dto.getGoods_description())
+                .stock_state(dto.getStock_state())
+                .goods_note(dto.getGoods_note())
+                .goods_price(dto.getGoods_price())
+                .build();
     }
 }
