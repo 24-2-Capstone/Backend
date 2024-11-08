@@ -11,6 +11,7 @@ public enum BaseResponseStatus {
      * 코드의 원활한 이해을 위해 code는 숫자가 아닌 아래 형태로 입력해주세요.
      */
     SUCCESS(true, HttpStatus.OK.value(), "요청에 성공하였습니다."),
+    DELETE_SUCCESS(true, HttpStatus.OK.value(), "상품을 성공적으로 삭제했습니다."),
 
     // 4xx : client error
     FAIL_TOKEN_AUTHORIZATION(false, HttpStatus.UNAUTHORIZED.value(), "토큰 인증에 실패하였습니다."),
@@ -22,6 +23,7 @@ public enum BaseResponseStatus {
     HTTP_METHOD_ERROR(false, HttpStatus.FORBIDDEN.value(), "http 메서드가 올바르지 않습니다."),
     NON_EXIST_GOODS(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 상품입니다."),
     NON_GOODS_BY_NAME(false, HttpStatus.UNAUTHORIZED.value(), "해당 이름인 상품이 존재하지 않습니다."),
+    NO_GOODS_BY_CATEGORY(false, HttpStatus.UNAUTHORIZED.value(), "해당 카테고리의 상품이 존재하지 않습니다."),
 
     // 5xx : server error
     SERVER_ERROR(false, HttpStatus.INTERNAL_SERVER_ERROR.value(), "서버에 오류가 있습니다. 다시 시도해주세요."),

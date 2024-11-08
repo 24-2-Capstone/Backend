@@ -7,6 +7,7 @@ import com.example.capstone.entity.Goods;
 import com.example.capstone.entity.Location;
 import com.example.capstone.repository.GoodsRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class GoodsService {
     // try catch로 수정해보기
 
@@ -46,5 +48,15 @@ public class GoodsService {
             throw new BaseException(BaseResponseStatus.NON_GOODS_BY_NAME);
         }
         return GoodsListFindByGoodName;
+    }
+
+    public List<GoodsResponse> searchGoodsWithCategory(String category) {
+        List<GoodsResponse> GoodsByCategory = goodsRepository.findByCategory(category)
+                .stream()
+                .map(goods -> GoodsResponse.entityToDto(goods))
+                .toList();
+        if (GoodsByCategory.isEmpty())
+            throw new BaseException(BaseResponseStatus.NO_GOODS_BY_CATEGORY);
+        return GoodsByCategory;
     }
 }

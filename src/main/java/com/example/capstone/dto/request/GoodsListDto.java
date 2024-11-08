@@ -14,7 +14,12 @@ public class GoodsListDto {
 
     private int stock_state;
 
-    private String goods_note;
+    private int goods_price;
 
-    private String goods_price;
+    private int salePrice;
+
+    private boolean isSale;
+
+    private String imageURL;
+
 }
