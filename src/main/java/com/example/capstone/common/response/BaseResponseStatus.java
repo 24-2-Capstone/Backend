@@ -22,8 +22,10 @@ public enum BaseResponseStatus {
     NON_EXIST_USER(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 회원입니다."),
     HTTP_METHOD_ERROR(false, HttpStatus.FORBIDDEN.value(), "http 메서드가 올바르지 않습니다."),
     NON_EXIST_GOODS(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 상품입니다."),
+    NON_EXIST_LOCATION(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 위치입니다."),
     NON_GOODS_BY_NAME(false, HttpStatus.UNAUTHORIZED.value(), "해당 이름인 상품이 존재하지 않습니다."),
     NO_GOODS_BY_CATEGORY(false, HttpStatus.UNAUTHORIZED.value(), "해당 카테고리의 상품이 존재하지 않습니다."),
+    NON_CATEGORY_ERROR(false, HttpStatus.UNAUTHORIZED.value(), "해당 카테고리가 존재하지 않습니다."),
 
     // 5xx : server error
     SERVER_ERROR(false, HttpStatus.INTERNAL_SERVER_ERROR.value(), "서버에 오류가 있습니다. 다시 시도해주세요."),

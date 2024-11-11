@@ -12,11 +12,12 @@ import java.time.LocalDateTime;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-// @Table(name = "Chat")
+@Table(name = "Chat")
 public class Chat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "chat_id")
     private Long id;
 
     @CreationTimestamp

@@ -14,20 +14,25 @@ public class Goods {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "goods_id")
     private Long id;
 
+    @Column(name = "goods_description")
     private String goods_description;
 
-    private String goods_name;
+    @Column(name = "goods_name")
+    private String name;
 
+    @Column(name = "stock_state")
     private int stock_state;
 
+    @Column(name = "goods_price")
     private int goods_price;
 
-    private int salePrice;
+    @Column(name = "sale_price")
+    private int sale_price;
 
-    private boolean isSale;
-
+    @Column(name = "imageURL")
     private String imageURL;
 
 
@@ -35,7 +40,7 @@ public class Goods {
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "location_id", nullable = false)
     private Location location;
 
@@ -43,10 +48,10 @@ public class Goods {
     public Goods(Long id, String goods_description, String goods_name, int stock_state, int goods_price, int salePrice, String imageURL) {
         this.id = id;
         this.goods_description = goods_description;
-        this.goods_name = goods_name;
+        this.name = goods_name;
         this.stock_state = stock_state;
         this.goods_price = goods_price;
-        this.salePrice = salePrice;
+        this.sale_price = salePrice;
         this.imageURL = imageURL;
     }
 

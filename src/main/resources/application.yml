@@ -1,6 +1,11 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: // 개인 로컬 DB 정보
-    username: // 개인 로컬 DB 정보
-    password: // 개인 로컬 DB 정보
+    url: jdbc:mysql://localhost:3306/Capstone
+    username: root
+    password: seunghobaek~!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

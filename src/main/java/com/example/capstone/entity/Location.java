@@ -5,8 +5,6 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -14,19 +12,22 @@ public class Location {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "location_id")
     private Long id;
 
-    private int floor;
+    @Column(name = "locationX")
+    private int x;
 
-    private String location_detail;
+    @Column(name = "locationY")
+    private int y;
 
-    private double x;
-
-    private double y;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
 
     @OneToOne(mappedBy = "location")
     private Robot robot;
 
-    @OneToMany(mappedBy = "locaiton", cascade = CascadeType.REMOVE)
-    private List<Location> locations;
+    @OneToOne(mappedBy = "location")
+    private Goods goods;
 }
