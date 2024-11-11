@@ -15,15 +15,20 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "category_id")
     private Long id;
 
-    private String category_name;
+    @Column(name = "category_name")
+    private String categoryName;
+
+    @OneToMany(mappedBy = "category")
+    private List<Location> LocationList = new ArrayList<>();
 
     @OneToMany(mappedBy = "category", cascade = CascadeType.REMOVE)
     private List<Goods> goodsList = new ArrayList<>();
 
     public Category(Long id, String category_name) {
         this.id = id;
-        this.category_name = category_name;
+        this.categoryName = category_name;
     }
 }

@@ -16,30 +16,28 @@ public class GoodsResponse {
 
     private int goods_price;
 
-    private int salePrice;
-
-    private boolean isSale;
+    private int sale_price;
 
     private String imageURL;
 
     @Builder
-    private GoodsResponse(String goods_description, String goods_name, int stock_state, int goods_price, int salePrice, boolean isSale, String imageURL) {
+    private GoodsResponse(String goods_description, String goods_name, int stock_state, int goods_price, int sale_price, String imageURL) {
         this.goods_description = goods_description;
         this.goods_name = goods_name;
         this.stock_state = stock_state;
         this.goods_price = goods_price;
-        this.salePrice = salePrice;
-        this.isSale = isSale;
+        this.sale_price = sale_price;
         this.imageURL = imageURL;
     }
 
     public static GoodsResponse entityToDto(Goods goods) {
         return GoodsResponse.builder()
-                .goods_name(goods.getGoods_name())
+                .goods_name(goods.getName())
                 .goods_description(goods.getGoods_description())
                 .stock_state(goods.getStock_state())
                 .goods_price(goods.getGoods_price())
-                .salePrice(goods.getSalePrice())
+                .sale_price(goods.getSale_price())
+                .imageURL(goods.getImageURL())
                 .build();
     }
 }

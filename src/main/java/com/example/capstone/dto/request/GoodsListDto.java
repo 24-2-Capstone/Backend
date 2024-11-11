@@ -18,8 +18,6 @@ public class GoodsListDto {
 
     private int salePrice;
 
-    private boolean isSale;
-
     private String imageURL;
 
 }
