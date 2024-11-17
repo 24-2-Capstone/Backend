@@ -8,6 +8,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class GoodsResponse {
+
+    private Long id;
+
     private String goods_description;
 
     private String goods_name;
@@ -21,7 +24,8 @@ public class GoodsResponse {
     private String imageURL;
 
     @Builder
-    private GoodsResponse(String goods_description, String goods_name, int stock_state, int goods_price, int sale_price, String imageURL) {
+    private GoodsResponse(Long id, String goods_description, String goods_name, int stock_state, int goods_price, int sale_price, String imageURL) {
+        this.id = id;
         this.goods_description = goods_description;
         this.goods_name = goods_name;
         this.stock_state = stock_state;
@@ -32,6 +36,7 @@ public class GoodsResponse {
 
     public static GoodsResponse entityToDto(Goods goods) {
         return GoodsResponse.builder()
+                .id(goods.getId())
                 .goods_name(goods.getName())
                 .goods_description(goods.getGoods_description())
                 .stock_state(goods.getStock_state())

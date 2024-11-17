@@ -14,12 +14,6 @@ public enum BaseResponseStatus {
     DELETE_SUCCESS(true, HttpStatus.OK.value(), "상품을 성공적으로 삭제했습니다."),
 
     // 4xx : client error
-    FAIL_TOKEN_AUTHORIZATION(false, HttpStatus.UNAUTHORIZED.value(), "토큰 인증에 실패하였습니다."),
-
-    EXIST_EMAIL(false, HttpStatus.CONFLICT.value(), "이미 존재하는 회원입니다."),
-    EXIST_NICKNAME(false, HttpStatus.CONFLICT.value(), "이미 존재하는 닉네임입니다."),
-
-    NON_EXIST_USER(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 회원입니다."),
     HTTP_METHOD_ERROR(false, HttpStatus.FORBIDDEN.value(), "http 메서드가 올바르지 않습니다."),
     NON_EXIST_GOODS(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 상품입니다."),
     NON_EXIST_LOCATION(false, HttpStatus.UNAUTHORIZED.value(), "존재하지 않는 위치입니다."),
