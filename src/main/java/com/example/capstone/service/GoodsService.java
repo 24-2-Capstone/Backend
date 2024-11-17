@@ -37,7 +37,7 @@ public class GoodsService {
 
     public GoodsResponse searchGoodsByName(String goods_name) {
         Goods goods = goodsRepository.findByName(goods_name)
-                .orElseThrow(() -> new BaseException(BaseResponseStatus.NON_EXIST_GOODS));
+                .orElseThrow(() -> new BaseException(BaseResponseStatus.NON_GOODS_BY_NAME));
 
         return GoodsResponse.entityToDto(goods);
     }
@@ -63,5 +63,13 @@ public class GoodsService {
                 .toList();
 
         return goodsResponseList;
+    }
+
+    public List<GoodsResponse> getAllGoods() {
+
+        return goodsRepository.findAll()
+                .stream()
+                .map(GoodsResponse::entityToDto)
+                .toList();
     }
 }

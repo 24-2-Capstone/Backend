@@ -41,6 +41,11 @@ public class GoodsController {
     public BaseResponse<List<GoodsResponse>> searchGoodsListByCategory(@RequestParam String category) {
         try {
             List<GoodsResponse> goodsList = goodsService.searchGoodsListByCategory(category);
+
+            if (goodsList.isEmpty()) {
+                return new BaseResponse<>(BaseResponseStatus.NO_GOODS_BY_CATEGORY);
+            }
+            
             return new BaseResponse<>(goodsList);
         } catch (BaseException e) {
             return new BaseResponse<>(e.getStatus());
@@ -51,6 +56,16 @@ public class GoodsController {
     public BaseResponse<List<GoodsResponse>> searchGoodsListByKeyword(@RequestParam String keyword) {
         try {
             List<GoodsResponse> goodsList = goodsService.searchGoodsListByKeyword(keyword);
+            return new BaseResponse<>(goodsList);
+        } catch (BaseException e) {
+            return new BaseResponse<>(e.getStatus());
+        }
+    }
+
+    @GetMapping("/goods/search/all")
+    public BaseResponse<List<GoodsResponse>> getAllGoods() {
+        try {
+            List<GoodsResponse> goodsList = goodsService.getAllGoods();
             return new BaseResponse<>(goodsList);
         } catch (BaseException e) {
             return new BaseResponse<>(e.getStatus());
