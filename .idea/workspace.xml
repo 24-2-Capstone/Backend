@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43396062-1031-4f70-9ca9-7c70a9ce7115" name="변경" comment="이름 변경 및 yml 파일 수정">
+    <list default="true" id="43396062-1031-4f70-9ca9-7c70a9ce7115" name="변경" comment="상품관련 id 반환 추가, 예외처리 수정">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b1936b35-86a6-45dd-8649-f1aad0ca5c47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b1936b35-86a6-45dd-8649-f1aad0ca5c47.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Capstone_Backend.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Capstone_Backend.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/example/capstone/common/response/BaseResponseStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/example/capstone/common/response/BaseResponseStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/capstone/controller/RobotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/capstone/controller/RobotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/capstone/dto/response/LocationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/capstone/dto/response/LocationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/capstone/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/capstone/service/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/capstone/service/RobotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/capstone/service/RobotService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,9 +67,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;BSHkr&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;BSHkr&quot;
+    &quot;author&quot;: &quot;BSHkr&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
@@ -62,6 +84,9 @@
     &quot;accountId&quot;: &quot;14b44314-d985-4958-afc5-c08ae7e2c07b&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -71,29 +96,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.capstone 빌드.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CapstoneApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "프로젝트",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="CapstoneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Capstone_Backend.main" />
@@ -121,7 +153,45 @@
       <updated>1728623285671</updated>
       <workItem from="1728623286856" duration="634000" />
       <workItem from="1728623992827" duration="2562000" />
-      <workItem from="1728628210561" duration="357000" />
+      <workItem from="1728628210561" duration="1241000" />
+      <workItem from="1728725992969" duration="14000" />
+      <workItem from="1728826437710" duration="1087000" />
+      <workItem from="1728880331896" duration="6000" />
+      <workItem from="1728899209682" duration="432000" />
+      <workItem from="1728900367342" duration="1760000" />
+      <workItem from="1728904670701" duration="18000" />
+      <workItem from="1729227007331" duration="545000" />
+      <workItem from="1729227626174" duration="3805000" />
+      <workItem from="1729248273752" duration="7000" />
+      <workItem from="1730306332225" duration="494000" />
+      <workItem from="1730345607123" duration="6000" />
+      <workItem from="1730633590214" duration="1543000" />
+      <workItem from="1730695415909" duration="4000" />
+      <workItem from="1730921193483" duration="2411000" />
+      <workItem from="1730923616961" duration="3000" />
+      <workItem from="1730923624299" duration="1000" />
+      <workItem from="1731000595030" duration="2249000" />
+      <workItem from="1731040922924" duration="2834000" />
+      <workItem from="1731048642303" duration="6110000" />
+      <workItem from="1731083213428" duration="1321000" />
+      <workItem from="1731150594342" duration="6899000" />
+      <workItem from="1731219496545" duration="14581000" />
+      <workItem from="1731299635769" duration="10000" />
+      <workItem from="1731313539345" duration="3487000" />
+      <workItem from="1731344784671" duration="4786000" />
+      <workItem from="1731391229704" duration="2345000" />
+      <workItem from="1731472541876" duration="7000" />
+      <workItem from="1731584382820" duration="1465000" />
+      <workItem from="1731664021274" duration="1908000" />
+      <workItem from="1731767145868" duration="1545000" />
+      <workItem from="1731821623394" duration="5102000" />
+      <workItem from="1731904466725" duration="602000" />
+      <workItem from="1731934829265" duration="4765000" />
+      <workItem from="1731999910934" duration="4234000" />
+      <workItem from="1732123029999" duration="3000" />
+      <workItem from="1732175986048" duration="2877000" />
+      <workItem from="1732208863624" duration="47000" />
+      <workItem from="1732213045752" duration="1608000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -139,15 +209,179 @@
       <option name="project" value="LOCAL" />
       <updated>1728625554642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Chat, User 엔티티 생성 및 Repo 생성">
+      <option name="closed" value="true" />
+      <created>1728628701244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728628701244</updated>
+    </task>
+    <task id="LOCAL-00004" summary="WebSocket 관련 기본 설정">
+      <option name="closed" value="true" />
+      <created>1728826848948</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728826848948</updated>
+    </task>
+    <task id="LOCAL-00005" summary="entity 생성 및 관계 매핑">
+      <option name="closed" value="true" />
+      <created>1728901273481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728901273481</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update">
+      <option name="closed" value="true" />
+      <created>1728901521922</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728901521922</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Goods Controller, Service">
+      <option name="closed" value="true" />
+      <created>1730634669727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730634669727</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add deleteGoods">
+      <option name="closed" value="true" />
+      <created>1730921484043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730921484043</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add Robot Moving API">
+      <option name="closed" value="true" />
+      <created>1731002301813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002301813</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add for Robot Moving">
+      <option name="closed" value="true" />
+      <created>1731002326542</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002326542</updated>
+    </task>
+    <task id="LOCAL-00011" summary="상품 이름으로 검색 기능 추가">
+      <option name="closed" value="true" />
+      <created>1731002358733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002358733</updated>
+    </task>
+    <task id="LOCAL-00012" summary="실패상황 2개 추가">
+      <option name="closed" value="true" />
+      <created>1731002379827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002379827</updated>
+    </task>
+    <task id="LOCAL-00013" summary="GoodsResponse 수정">
+      <option name="closed" value="true" />
+      <created>1731002554611</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002554611</updated>
+    </task>
+    <task id="LOCAL-00014" summary="사용하지 않는 import문 처리">
+      <option name="closed" value="true" />
+      <created>1731002763170</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731002763170</updated>
+    </task>
+    <task id="LOCAL-00015" summary="크롤링된 데이터 파일에 따라서 엔티티 수정 및 카테고리로 상품검색 추가">
+      <option name="closed" value="true" />
+      <created>1731044131753</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731044131753</updated>
+    </task>
+    <task id="LOCAL-00016" summary="코드 전반적으로 데이터에 맞게 수정 및 API 추가">
+      <option name="closed" value="true" />
+      <created>1731349258682</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731349258682</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add LocaitonDto, Service">
+      <option name="closed" value="true" />
+      <created>1731349388987</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1731349388987</updated>
+    </task>
+    <task id="LOCAL-00018" summary="예외처리 수정">
+      <option name="closed" value="true" />
+      <created>1731822465536</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731822465536</updated>
+    </task>
+    <task id="LOCAL-00019" summary="상품관련 id 반환 추가, 예외처리 수정">
+      <option name="closed" value="true" />
+      <created>1731822498578</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1731822498578</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="이름 변경 및 yml 파일 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="이름 변경 및 yml 파일 수정" />
+    <MESSAGE value="Chat, User 엔티티 생성 및 Repo 생성" />
+    <MESSAGE value="WebSocket 관련 기본 설정" />
+    <MESSAGE value="entity 생성 및 관계 매핑" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Add Goods Controller, Service" />
+    <MESSAGE value="Add deleteGoods" />
+    <MESSAGE value="Add Robot Moving API" />
+    <MESSAGE value="Add for Robot Moving" />
+    <MESSAGE value="상품 이름으로 검색 기능 추가" />
+    <MESSAGE value="실패상황 2개 추가" />
+    <MESSAGE value="GoodsResponse 수정" />
+    <MESSAGE value="사용하지 않는 import문 처리" />
+    <MESSAGE value="크롤링된 데이터 파일에 따라서 엔티티 수정 및 카테고리로 상품검색 추가" />
+    <MESSAGE value="코드 전반적으로 데이터에 맞게 수정 및 API 추가" />
+    <MESSAGE value="Add LocaitonDto, Service" />
+    <MESSAGE value="예외처리 수정" />
+    <MESSAGE value="상품관련 id 반환 추가, 예외처리 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="상품관련 id 반환 추가, 예외처리 수정" />
   </component>
 </project>
