@@ -3,6 +3,7 @@ package com.example.capstone.service;
 import com.example.capstone.common.exception.BaseException;
 import com.example.capstone.common.response.BaseResponseStatus;
 import com.example.capstone.dto.response.LocationDto;
+import com.example.capstone.entity.Category;
 import com.example.capstone.entity.Goods;
 import com.example.capstone.entity.Location;
 import com.example.capstone.repository.GoodsRepository;
@@ -27,8 +28,10 @@ public class LocationService {
         Location location = locationRepository.findById(locationId)
                 .orElseThrow(() -> new BaseException(BaseResponseStatus.NON_EXIST_LOCATION));
 
+        Category category = location.getCategory();
+
         if (location != null) {
-            return LocationDto.toLocationDto(location);
+            return LocationDto.toLocationDto(location, category);
         } else {
             throw new BaseException(BaseResponseStatus.NON_EXIST_LOCATION);
         }
