@@ -14,4 +14,6 @@ public interface GoodsRepository extends JpaRepository<Goods, Long> {
     List<Goods> findByCategoryId(Long id);
 
     List<Goods> findByNameContaining(String keyword);
+
+    Optional<Goods> findById(Long id);
 }
